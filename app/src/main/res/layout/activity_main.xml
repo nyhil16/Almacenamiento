@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4E5775"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="264dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTelDir"
+        android:layout_width="264dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/tel_dir"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#D5B20C"
+        android:text="@string/guardar"
+        android:textColor="#2E2E2E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTelDir" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#D5B20C"
+        android:text="@string/buscar"
+        android:textColor="#2E2E2E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/etTelDir" />
+</androidx.constraintlayout.widget.ConstraintLayout>
